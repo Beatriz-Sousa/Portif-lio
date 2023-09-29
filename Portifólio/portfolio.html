@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var botaoSobreMim = document.querySelector(".btn");
+
+            botaoSobreMim.addEventListener("click", function () {
+                mostrarSobreMimTexto();
+            });
+        });
+
+        function mostrarSobreMimTexto() {
+            var sobreMimTexto = document.getElementById("sobreMimTexto");
+
+            if (sobreMimTexto.style.display === "none" || sobreMimTexto.style.display === "") {
+                sobreMimTexto.style.display = "block";
+            } else {
+                sobreMimTexto.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-b"></i>
+            </div>
+            <div class="cabeçalho-link">
+                <li>
+                    <a class="linkb" href="port.html">Projetos</a>
+                </li>
+
+                <a class="btn-a" href="mailto:beatrizssousa37@gmail.com">Meu contato</a>
+
+            </div>
+        </header>
+
+        <div class="container-text">
+            <div class="text">
+                <h3>Olá, Pessoal!</h3>
+                <h1>Eu sou <span>Beatriz Sousa</span></h1>
+                <p>Sou estudante de Análise e Desenvolvimento de Sistemas<br> e futura Analista de Sistemas.</p>
+                <div class="redes-sociais">
+                    <a href="https://www.linkedin.com/in/beatriz-santos-24052225b" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Beatriz-Sousa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <button class="btn">Sobre Mim</button> 
+                
+            </div>
+            <div>
+             <p id="sobreMimTexto" style="display: none;" class="texto">
+                    Tenho 19 anos, nasci em Guarulhos-SP, moro em Recife-Pe há 10 anos. Gosto de assistir<br>
+                    filmes,
+                    passar o tempo livre com a minha família,
+                    gosto também de admirar paisagens. <br>
+                    Passei no processo seletivo Embarque Digital da Prefeitura e estou estudando <br>
+                    na Faculdade Senac, faço a Residência Onboard do
+                    Porto Digital, estou estudando <br>
+                    para ser no futuro uma Analista de Sistemas.
+                </p>  
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
